@@ -24,6 +24,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&family=Raleway:wght@100;400;600&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
+
+  <!-- Fontawesome Fonts -->
+  <script src="https://kit.fontawesome.com/ad692869dc.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -33,26 +37,29 @@
         <div class="name">
             <h1>Rachel <span class="bold">Dooley</span></h1>
         </div>
-        <div class="header-divider"></div>
-    <!-- Navigation -->
-            <nav>
-                <ul>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-      
+    
+    <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <div id="myLinks">
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+             <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
     </div>
-
 </header>
+
  <main>
 
     <!-- Hero Area -->
     <section class="hero-area">
         <div class="content-wrapper">
             <h1>Hi, I'm Rachel, <span class="highlight">front-end web developer.</span></h1>
-            <article>
+            <article class="bio">
                 <figure>
                     <img class="bio-pic" src="img/portfolio-bio-pic.png" alt="Author Picture"/>
                 </figure>
@@ -67,6 +74,7 @@
             </button>
             <button class="my-work">
                 <a class="my-work-button" href="#work">See My Work</a>
+                <p class="arrow-icon"><i class="fa-solid fa-angles-right"></i></p>
             </button>
         </div>
     
@@ -88,17 +96,21 @@
             </div>
     
             <div class="project-two">
-                <img/>
+                <figure>
+                    <img src="img/github-repo-mockup.png" alt="github repo mockup picture"/>
+                </figure>
                 <h3>Github Repo</h3>
-                <p>I pride myself on writing CSS that is easy to read and build on. I focus on keeping my CSS lean and fast to load, and I make it a habit to stay up to date on current best practices.</p>
+                <p>My focus is writing clean, well-formatted, semantic HTML5 by hand to make sure that the content is easy to read, easy to collaborate, trouble-shoot and accessible.</p>
                 <button class="project">See this project</button>
             </div>
 
             <div class="project-three">
-                <img/>
-                <h3>Guess The Word game</h3>
-                <p>I pride myself on writing CSS that is easy to read and build on. I focus on keeping my CSS lean and fast to load, and I make it a habit to stay up to date on current best practices.</p>
-                <button class="project">Play Guess the Word</button>
+                <figure>
+                    <img src="img/guess-the-word-mockup.png" alt="Guess the word game"/>
+                </figure>
+                <h3>Guess The Word</h3>
+                <p>My focus is writing clean, well-formatted, semantic HTML5 by hand to make sure that the content is easy to read, easy to collaborate, trouble-shoot and accessible.</p>
+                <button class="project">See this project</button>
             </div>
         </div>
     </section>
@@ -108,27 +120,32 @@
             <h2>Skills</h2>
             <div class="skill-items">
                 <article>
-                    <p class="fontawesome-icon"></p>
-                    <p class="skills-description">HTML5 &amp; CSS3</p>
+                    <p class="fontawesome-icon"><i class="fa-brands fa-html5"></i></p>
+                    <p class="skills-description">HTML5</p>
                 </article>
 
                 <article>
-                    <p class="fontawesome-icon"></p>
+                    <p class="fontawesome-icon"><i class="fa-brands fa-css3"></i></p>
+                    <p class="skills-description">CSS3</p>
+                </article>
+
+                <article>
+                    <p class="fontawesome-icon"><i class="fa-brands fa-js"></i></p>
                     <p class="skills-description">JavaScript</p>
                 </article>
 
                 <article>
-                    <p class="fontawesome-icon"></p>
+                    <p class="fontawesome-icon"><i class="fa-solid fa-code-branch"></i></p>
                     <p class="skills-description">Git &amp; Github</p>
                 </article>
 
                 <article>
-                    <p class="fontawesome-icon"></p>
+                    <p class="fontawesome-icon"><i class="fa-solid fa-mobile-screen"></i></p>
                     <p class="skills-description">Responsive Web Development</p>
                 </article>
 
                 <article>
-                    <p class="fontawesome-icon"></p>
+                    <p class="fontawesome-icon"><i class="fa-solid fa-paintbrush"></i></p>
                     <p class="skills-description">Adobe Creative Suite</p>
                 </article>
             </div>
@@ -139,14 +156,19 @@
     <section id="about">
         <div class="content-wrapper">
             <h2>A little about me</h2>
-            <!--Left Column -->
-            <div class="left">
-                   <img/> <!--Bio Image--> 
-            </div>
-            <!-- Right Column -->
-            <div class="right">
-                <p>That curiosity then opened a door that could never be shut. When I learned how to build my first website, I realized I found something that gave me the freedom & versatility I was looking for in my work. Now I’ve made a full switch to front-end development, where I can use my organization skills and eye for detail to write clean, elegant code.</p>
-            </div>
+            <article class="about-me">
+                <figure>
+                <img/>
+
+                </figure>
+                <div>
+                <h3>Stay At Home Mom Turned Web Developer</h3>
+                <p>Hi, I'm Rachel. I was a stay at home mom for 5 years then started a Etsy shop selling my fashion designs.
+                    I was drawn to front end web development because I love solving problems and seeing the result on the other side.
+                    When I'm not coding you'll find me sewing or hanging out outside with my neighbors.
+                </p>
+                </div>
+            </article>
         </div>
     </section>
 
