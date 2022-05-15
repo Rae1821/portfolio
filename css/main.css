@@ -99,8 +99,6 @@ body {
   color: #2b2b2b;
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
-  
-  
 }
 
 ul {
@@ -109,15 +107,13 @@ ul {
 
 .content-wrapper {
   width: 90%;
-  margin: 50px 0;
+ 
 }
 
 
 img {
   width: 100%;
 }
-
-
 
 figure {
   margin: 0;
@@ -144,30 +140,26 @@ header {
   align-items: center;
   flex-flow: row wrap;
   padding: 15px 0;
+  border-bottom: 0.8px solid #fff;
 }
 
-.name h1 {
+.name h2 {
   color: #fff;
-  text-align: center;
+  text-align: left;
   letter-spacing:  0.2em;
   font-weight: 100;
   margin: 10px;
+  
 }
 
 header .content-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
 }
 
-.header-divider {
-  background: #fff;
-  width: 100%;
-  height: 1px;
-  margin: 10px 0 20px 0;
-}
 
 /** Navigation Menu **/
 
@@ -208,37 +200,6 @@ header .content-wrapper {
   color: black;
 }
 
-
-header nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  text-transform: uppercase;
-  font-size: 1.125em;
-  font-weight: 600;
-  width: 80%;
-}
-
-
-header nav ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding-left: 0;
-}
-
-header nav ul li {
-  font-size: 1.125em;
-}
-
-header nav ul a {
-  color: #fff;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-
-}
-
 .bold {
   font-family: 'Abril Fatface', cursive;
 }
@@ -246,34 +207,44 @@ header nav ul a {
 /* Hero Area */
 
 .hero-area {
+  
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
 
 .hero-area h1 {
+  color: #2b2b2b;
+  font-weight: 600;
   width: 100%;
   margin-bottom: 40px;
 }
 
 h1 .highlight {
-  text-decoration: underline #008F8C solid 6px;
+  background: #a3e0dd;
 }
 
-article .bio {
+.bio {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-flow: row wrap;
 }
 
+figure .bio {
+  display: flex;
+}
+
 .bio-pic {
-  width: 70%;
+  width: 40%;
   box-shadow: 10px 10px #023535;
   margin-bottom: 40px;
 }
 
 .description {
-  width: 90%;
+  width: 35%;
+  color: #2b2b2b;
 }
 
 .button-wrapper {
@@ -284,21 +255,29 @@ article .bio {
   border: 3px solid #008F8C;
   background-color: #008F8C;
 }
+
 button.connect {
-  width: 45%;
+  width: 43%;
   padding: 10px 0;
+  margin-right: 15px;
 }
 
 button.connect:hover {
   transform: scale(1.1);
+  background-color: #ff8d5b;
+  border-color: #ff8d5b;
 }
 
 button.my-work {
-  width: 45%;
+  width: 43%;
+  margin-left: 15px;
 }
 
 button.my-work:hover {
   transform: scale(1.1);
+  background-color: #ff8d5b;
+  border-color: #ff8d5b;
+  color: #fff;
 }
 
 .connect a {
@@ -319,39 +298,59 @@ button.my-work:hover {
   padding: 10px 0;
 }
 
-.arrow-icon {
-  display: none;
-}
-
-.arrow-icon:hover {
-  display: inline;
+button.project a {
+  text-decoration: none;
+  color: #fff;
 }
 
 
+
+.page-divider-icon i {
+  font-size: 1.5em;
+  padding-top: 20px;
+  color: #015958;
+}
 
 
 /*********** Work Section ****************/
 
 #work {
+  color: #2b2b2b;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding-bottom: 40px;
 }
 #work h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   font-size: 1.875em;
 }
 
 #work h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: 1.5em;
 }
 
 #work figure {
-  box-shadow: 10px 10px #23606E;
+  box-shadow: 10px 10px #023535;
   height: 90%;
   width: 90%;
   margin: 50px 0;
+}
+
+ul.languages {
+  padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul.languages li {
+  font-weight: 100;
+  padding: 2px 10px;
+  margin: 0 5px;
+  background: #015958;
+  color: #fff;
+  border-radius: 5px;
 }
 
 button.project {
@@ -368,70 +367,95 @@ button.project i {
 
 button.project:hover {
   transform: scale(1.2);
+  background-color: #ff8d5b;
 }
 
 
 /************** Skills Section *************/
 
+#skills .content-wrapper {
+  width: 90%;
+}
+
+/* Entire skills section id */
 #skills {
+  background: #E6DED9;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: #23606E;
   color: #fff;
+  padding: 50px 0;
+  
 }
 
 #skills h2 {
+  color: #015958;
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 #skills p {
   margin: 0;
- 
-  font-size: 1.5em;
-  color: #fff;
+  text-align: center;
+  font-size: 1.25em;
+  color: #015958;
 }
 
-
+/* Each individual icon and description */
 #skills article {
+  margin: 30px 15px;
 
-  margin: 30px 0;
-  
 }
 
+/* Class for tech skills section and also for soft skills section */
 .skill-items {
   display: flex;
   justify-content: center;
-  flex-flow: column wrap; 
-  width: 100%;
-  
-  
+}
+.tech-skills {
+  padding-bottom: 15px;
+}
+
+.soft-skills {
+  border-top: 1px solid #015958;
+  padding-top: 20px;
+}
+
+.div-one,
+.div-two,
+.div-three {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  flex-basis: 40%;
 }
 
 #skills i {
-  color: #fff;
-  font-size: 1em;
+  color: #015958;
+  font-size: 2em;
   margin-bottom: 40px;
 }
 
-p.fontawesome-icon {
-  margin: 10px;
-  padding: 10px;
+#skills i:hover {
+  color: #008F8C;
+  transform: scale(1.1);
 }
-
 
 
 /**************** About Me Section **************/
 
 #about {
+  
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  margin: 10px 0 30px 0;
+ 
 }
 
 #about h2 {
+  color: #023535;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
 }
@@ -445,6 +469,7 @@ footer {
   justify-content: center;
   color: #fff;
   background-color: #015958;
+  padding: 20px 0;
 }
 
 
@@ -571,9 +596,188 @@ footer p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+
+
+@media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
+
+
+  /* Header Styles */
+
+  
+header .content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
 }
+
+/* Navigation */
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #015958;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu except for logo/home) */
+.topnav #myLinks {
+  display:inline-flex;
+}
+
+/* Style navigation menu links */
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 0.875em;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Hero Area */
+
+.hero-area {
+  
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.hero-area h1 {
+  color: #2b2b2b;
+  font-weight: 600;
+  font-size: 3em;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-size: 1.5em;
+  width: 35%;
+  color: #2b2b2b;
+}
+
+.bio {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+button.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.connect {
+  width: 45%;
+  padding: 10px 0;
+  margin-right: 15px;
+}
+
+button.connect:hover {
+  transform: scale(1.1);
+  background-color: #ff8d5b;
+  border-color: #ff8d5b;
+}
+
+button.my-work {
+  width: 45%;
+  margin-left: 15px;
+}
+
+button.my-work:hover {
+  transform: scale(1.1);
+  background-color: #ff8d5b;
+  border-color: #ff8d5b;
+  color: #fff;
+}
+
+/* Work Section */
+
+#work h3 {
+  font-size: 1.75em;
+}
+
+#work p {
+  margin: 20px 0;
+}
+
+button.project a {
+  font-weight: 400;
+}
+
+/* Skills Section */
+
+#skills p {
+  font-size: 1.5em;
+}
+
+.tech-skills .div-one article {
+  width: 50%;
+}
+
+/* About Section */
+
+.about-me h3 {
+  font-size: 1.25em;
+}
+
+.email-contact p {
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+/* Footer Section */
+
+.social-icon-wrapper {
+  margin: 20px 0;
+}
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
