@@ -215,40 +215,45 @@ header .content-wrapper {
   padding-bottom: 20px;
 }
 
-.hero-area h1 {
-  color: #2b2b2b;
-  font-weight: 600;
-  width: 100%;
-  margin-bottom: 40px;
-}
-
-h1 .highlight {
-  background: #a3e0dd;
-}
-
-.bio {
+.hero-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-flow: row wrap;
 }
 
-figure .bio {
+.hero-content .headline {
+  color: #2b2b2b;
+  width:100%;
+  text-align: center;
+  margin: 0;
+}
+
+.highlight {
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff, #008F8c);
+}
+
+.description-image {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
 }
 
 .bio-pic {
-  width: 40%;
-  box-shadow: 10px 10px #023535;
-  margin-bottom: 40px;
+  width: 50%;
 }
 
+img.bio-pic {
+  width: 100%;
+}
 .description {
-  width: 35%;
+  width: 30%;
   color: #2b2b2b;
 }
 
 .button-wrapper {
-  width: 90%;
+  width: 50%;
 }
 
 .button-wrapper .connect {
@@ -257,7 +262,7 @@ figure .bio {
 }
 
 button.connect {
-  width: 43%;
+  width: 100%;
   padding: 10px 0;
   margin-right: 15px;
 }
@@ -269,14 +274,14 @@ button.connect:hover {
 }
 
 button.my-work {
-  width: 43%;
+  width: 100%;
   margin-left: 15px;
 }
 
 button.my-work:hover {
   transform: scale(1.1);
-  background-color: #ff8d5b;
-  border-color: #ff8d5b;
+  background-color: #ddd;
+  border-color: #ddd;
   color: #fff;
 }
 
@@ -332,7 +337,7 @@ button.project a {
 }
 
 #work figure {
-  box-shadow: 10px 10px #023535;
+  box-shadow: 10px 10px #015958;
   height: 90%;
   width: 90%;
   margin: 50px 0;
@@ -374,12 +379,12 @@ button.project:hover {
 /************** Skills Section *************/
 
 #skills .content-wrapper {
-  width: 90%;
+  width: 100%
 }
 
 /* Entire skills section id */
 #skills {
-  background: #E6DED9;
+  background: #015958;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -389,8 +394,8 @@ button.project:hover {
 }
 
 #skills h2 {
-  color: #015958;
-  font-family: 'Montserrat', sans-serif;
+  color: #2b2b2b;
+  font-weight: 400;
   font-size: 2em;
   margin-bottom: 30px;
 }
@@ -398,8 +403,8 @@ button.project:hover {
 #skills p {
   margin: 0;
   text-align: center;
-  font-size: 1.25em;
-  color: #015958;
+  font-size: 0.875em;
+  color: #2b2b2b;
 }
 
 /* Each individual icon and description */
@@ -413,13 +418,31 @@ button.project:hover {
   display: flex;
   justify-content: center;
 }
+
+/* Tech Skills Section*/
 .tech-skills {
+  background: #fff;
+  border: 2px solid #e7ded9;
+  box-shadow: 5px 5px #e7ded9;
   padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 0 auto 20px;
+  width: 90%;
 }
 
+/* Soft Skills Section */
 .soft-skills {
-  border-top: 1px solid #015958;
-  padding-top: 20px;
+  background: #fff;
+  border: 2px solid #e7ded9;
+  box-shadow: 5px 5px #e7ded9;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 0 auto 20px;
+  width: 90%;
+  
 }
 
 .div-one,
@@ -428,12 +451,13 @@ button.project:hover {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  flex-basis: 40%;
+  flex-shrink:inherit;
+ 
 }
 
 #skills i {
-  color: #015958;
-  font-size: 2em;
+  color: #008F8C;
+  font-size: 1.75em;
   margin-bottom: 40px;
 }
 
@@ -446,7 +470,6 @@ button.project:hover {
 /**************** About Me Section **************/
 
 #about {
-  
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -454,12 +477,34 @@ button.project:hover {
  
 }
 
+.about-wrapper {
+  width: 90%;
+}
+
 #about h2 {
-  color: #023535;
-  font-family: 'Montserrat', sans-serif;
+  color: #2b2b2b;
+  font-weight: 400;
   font-size: 1.5em;
 }
 
+#about h3 {
+  font-weight: 400;
+  font-size: 1.25em;
+}
+
+#about p {
+  font-size: 1em;
+}
+
+.email-contact p {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.email-contact i {
+  font-size: 1.5em;
+  padding-right: 3px;
+}
 
 
 /*************** Footer Section ******************/
@@ -671,26 +716,37 @@ header .content-wrapper {
   margin-bottom: 30px;
 }
 
-.description {
-  font-size: 1.5em;
-  width: 35%;
-  color: #2b2b2b;
-}
 
-.bio {
+.description-image {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-flow: row wrap;
+  margin-bottom: 50px;
+}
+
+.bio-pic {
+  width: 35%;
+}
+
+img.bio-pic {
+  width: 100%;
+}
+.description {
+  width: 30%;
+  color: #2b2b2b;
+  font-size: 1.5em;
 }
 
 button.wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 90%;
 }
 
 button.connect {
-  width: 45%;
+ 
   padding: 10px 0;
   margin-right: 15px;
 }
@@ -702,7 +758,6 @@ button.connect:hover {
 }
 
 button.my-work {
-  width: 45%;
   margin-left: 15px;
 }
 
@@ -715,8 +770,16 @@ button.my-work:hover {
 
 /* Work Section */
 
+#work figure {
+  width: 70%;
+}
+
 #work h3 {
   font-size: 1.75em;
+}
+
+#work h2 {
+  font-weight: 400;
 }
 
 #work p {
@@ -739,8 +802,26 @@ button.project a {
 
 /* About Section */
 
+#about {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#about-blurb {
+  width: 45%;
+}
+
 .about-me h3 {
   font-size: 1.25em;
+}
+
+#about h2 {
+  font-size: 1.875em;
+}
+
+.about-me .bio-pic {
+  width: 40%;
 }
 
 .email-contact p {
@@ -761,7 +842,166 @@ button.project a {
 @media only screen and (min-width: 1200px) {
 
 
+/* Header Section */
 
+
+
+
+  /* Hero Area */
+
+  .bio-pic {
+    width: 30%;
+    box-shadow: 10px 10px #015958;
+    margin-bottom: 40px;
+  }
+
+
+
+
+/* Work Section */
+
+#work h2 {
+  font-size: 2.25em;
+}
+
+#work h3 {
+  font-size: 1.875em;
+}
+
+
+#work .project-one {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin-bottom: 50px;
+}
+
+#work .project-two {
+  display:flex;
+  justify-content: space-between;
+  flex-flow: row-reverse wrap;
+  margin-bottom: 50px;
+}
+
+#work .project-three {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin-bottom: 50px;
+}
+
+.project-info {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  width: 50%;
+}
+
+.project-info p {
+  font-size: 1.5em;
+}
+
+#work figure {
+  width: 40%;
+}
+
+ul.languages {
+  justify-content: flex-start;
+  margin: 0;
+}
+
+ul.languages li {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 5px;
+  
+}
+
+button.project {
+  width: 70%;
+  font-size:1.25em;
+}
+
+
+
+
+
+/* Skills Section */
+
+
+#skills {
+  background: #015958;
+}
+
+.skills-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.tech-skills {
+  width: 35%;
+  margin-right: 25px;
+}
+
+.soft-skills {
+  width: 35%;
+  margin-left: 25px;
+}
+
+/* About Section */
+
+
+.about-wrapper {
+  width: 90%;
+}
+
+.about-me {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+#about-blurb h2 {
+  font-size: 2.25em;
+}
+
+#about-blurb h3 {
+  font-size: 1.5em;
+}
+
+#about-blurb p {
+  font-size: 1.125em;
+  line-height: 1.5;
+}
+
+.about-me .bio-pic {
+  width: 30%;
+}
+
+.email-contact {
+  padding-top: 20px;
+}
+
+
+
+/* Footer */
+
+
+.social-icons {
+  justify-content: center;
+}
+
+footer i {
+  font-size: 3em;
+  padding: 10px;
+  margin: 10px;
+}
+
+footer p {
+  padding-top: 20px;
+}
 
 
 
