@@ -207,12 +207,13 @@ header .content-wrapper {
 /* Hero Area */
 
 .hero-area {
-  
+  background: #015958;
+  color: #fff;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   padding-top: 25px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .hero-content {
@@ -224,37 +225,31 @@ header .content-wrapper {
 .hero-content .headline {
   color: #2b2b2b;
   width:100%;
-  text-align: center;
   margin: 0;
 }
 
 .highlight {
-  background-image: linear-gradient(to bottom, #ffffff, #ffffff, #008F8c);
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff, #e6e1d9);
 }
 
 .description-image {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .bio-pic {
-  width: 50%;
+  width: 80%;
 }
 
-img.bio-pic {
-  width: 100%;
-}
 .description {
-  width: 30%;
   color: #2b2b2b;
 }
 
 .button-wrapper {
-  width: 50%;
+  width: 40%;
 }
+
+/* Let's Connect Button */
 
 .button-wrapper .connect {
   border: 3px solid #008F8C;
@@ -264,30 +259,28 @@ img.bio-pic {
 button.connect {
   width: 100%;
   padding: 10px 0;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 button.connect:hover {
   transform: scale(1.1);
-  background-color: #ff8d5b;
-  border-color: #ff8d5b;
-}
-
-button.my-work {
-  width: 100%;
-  margin-left: 15px;
-}
-
-button.my-work:hover {
-  transform: scale(1.1);
-  background-color: #ddd;
-  border-color: #ddd;
-  color: #fff;
 }
 
 .connect a {
   text-decoration: none;
   color: #fff;
+}
+
+
+/* See My Work Button */
+
+button.my-work {
+  width: 100%;
+  margin-left: 10px;
+}
+
+button.my-work:hover {
+  transform: scale(1.1);
 }
 
 .button-wrapper .my-work {
@@ -307,8 +300,6 @@ button.project a {
   text-decoration: none;
   color: #fff;
 }
-
-
 
 .page-divider-icon i {
   font-size: 1.5em;
@@ -371,10 +362,12 @@ button.project i {
 }
 
 button.project:hover {
-  transform: scale(1.2);
-  background-color: #ff8d5b;
+  transform: scale(1.1);
 }
 
+button.project i:hover {
+  color: #ff8d5b;
+}
 
 /************** Skills Section *************/
 
@@ -474,11 +467,15 @@ button.project:hover {
   justify-content: center;
   flex-flow: row wrap;
   margin: 10px 0 30px 0;
- 
 }
 
 .about-wrapper {
   width: 90%;
+}
+
+img.bio-pic {
+  width: 60%;
+  
 }
 
 #about h2 {
@@ -490,6 +487,7 @@ button.project:hover {
 #about h3 {
   font-weight: 400;
   font-size: 1.25em;
+  padding-top: 20px;
 }
 
 #about p {
@@ -684,11 +682,9 @@ header .content-wrapper {
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  background: black;
+  
   display: none;
-  position: absolute;
-  right: 0;
-  top: 0;
+ 
 }
 
 /* Add a grey background color on mouse-over */
@@ -725,13 +721,10 @@ header .content-wrapper {
   margin-bottom: 50px;
 }
 
-.bio-pic {
-  width: 35%;
+img.bio-pic {
+  width: 50%;
 }
 
-img.bio-pic {
-  width: 100%;
-}
 .description {
   width: 30%;
   color: #2b2b2b;
@@ -753,8 +746,6 @@ button.connect {
 
 button.connect:hover {
   transform: scale(1.1);
-  background-color: #ff8d5b;
-  border-color: #ff8d5b;
 }
 
 button.my-work {
@@ -763,9 +754,6 @@ button.my-work {
 
 button.my-work:hover {
   transform: scale(1.1);
-  background-color: #ff8d5b;
-  border-color: #ff8d5b;
-  color: #fff;
 }
 
 /* Work Section */
@@ -842,19 +830,68 @@ button.project a {
 @media only screen and (min-width: 1200px) {
 
 
+ .content-wrapper {
+   max-width: 1240px;
+ } 
+
 /* Header Section */
 
+.name h2 {
+  font-size: 1.75em;
+  
+}
 
-
+.topnav a {
+  font-size: 1.5em;
+  font-weight: 100;
+}
 
   /* Hero Area */
 
-  .bio-pic {
-    width: 30%;
-    box-shadow: 10px 10px #015958;
-    margin-bottom: 40px;
+  .hero-content {
+    display: flex;
+    flex-flow: column wrap;
   }
 
+  .hero-content .headline {
+    width: 75%;
+    text-align: left;
+  }
+
+  .headline h1 {
+    width: 70%;
+    margin-bottom: 0;
+  }
+
+.description-image {
+ display: flex;
+ flex-flow: row wrap;
+ margin-bottom: 0;
+ padding-bottom: 0;
+}
+
+.description {
+  padding-right: 30px;
+}
+
+img.bio-pic {
+  width: 40%;
+}
+
+.button-wrapper {
+  display: flex;
+  width: 40%;
+}
+
+
+button.my-work {
+  margin:0;
+}
+
+button.connect {
+  margin: 0 0 20px 0;
+
+}
 
 
 
@@ -898,7 +935,8 @@ button.project a {
 }
 
 .project-info p {
-  font-size: 1.5em;
+  font-size: 1.25em;
+  line-height: 1.5;
 }
 
 #work figure {
@@ -932,6 +970,10 @@ button.project {
 
 #skills {
   background: #015958;
+}
+
+#skills p {
+  font-size: 1.125em;
 }
 
 .skills-wrapper {
