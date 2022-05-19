@@ -134,7 +134,7 @@ p {
 /* Header */
 
 header {
-  background-color: #015958;
+  background-color: #45ad9d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,7 +166,7 @@ header .content-wrapper {
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
-  background-color: #015958;
+  background-color: #45ad9d;
   position: relative;
 }
 
@@ -207,8 +207,7 @@ header .content-wrapper {
 /* Hero Area */
 
 .hero-area {
-  background: #015958;
-  color: #fff;
+  background: #fff;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -222,19 +221,27 @@ header .content-wrapper {
   flex-flow: row wrap;
 }
 
-.hero-content .headline {
-  color: #2b2b2b;
-  width:100%;
-  margin: 0;
+h1 {
+  font-size: 2em;
+  color: #45ad9d;
+  margin-bottom: 0;
 }
 
-.highlight {
-  background-image: linear-gradient(to bottom, #ffffff, #ffffff, #e6e1d9);
+.hero-area h2 {
+  color: #45ad9d;
+  margin-top: 0;
+}
+
+.hero-content .headline {
+  color: #ffffff;
+  width:100%;
+  margin: 0;
 }
 
 .description-image {
   display: flex;
   padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .bio-pic {
@@ -246,20 +253,24 @@ header .content-wrapper {
 }
 
 .button-wrapper {
-  width: 40%;
+  width: 45%;
+  display: flex;
+
 }
 
 /* Let's Connect Button */
 
 .button-wrapper .connect {
-  border: 3px solid #008F8C;
-  background-color: #008F8C;
+  border: 3px solid #45ad9d;
+  background-color: #fff;
+
 }
 
 button.connect {
   width: 100%;
   padding: 10px 0;
   margin-right: 10px;
+  justify-content: flex-start;
 }
 
 button.connect:hover {
@@ -268,7 +279,8 @@ button.connect:hover {
 
 .connect a {
   text-decoration: none;
-  color: #fff;
+  color: #45ad9d;
+  font-weight: 600;
 }
 
 
@@ -284,14 +296,14 @@ button.my-work:hover {
 }
 
 .button-wrapper .my-work {
-  background-color: #fff;
-  border: 3px solid #008F8C;
+  background-color: #45ad9d;
+  border: 3px solid #45ad9d;
   padding: 10px 0;
 }
 
 .my-work-button {
   text-decoration: none;
-  color: #008F8C;
+  color: #fff;
   font-weight: 600;
   padding: 10px 0;
 }
@@ -304,7 +316,7 @@ button.project a {
 .page-divider-icon i {
   font-size: 1.5em;
   padding-top: 20px;
-  color: #015958;
+  color: #45ad9d;
 }
 
 
@@ -328,7 +340,7 @@ button.project a {
 }
 
 #work figure {
-  box-shadow: 10px 10px #015958;
+  box-shadow: 20px 20px 50px grey;
   height: 90%;
   width: 90%;
   margin: 50px 0;
@@ -341,16 +353,17 @@ ul.languages {
 }
 
 ul.languages li {
+  font-size: 0.875em;
   font-weight: 100;
   padding: 2px 10px;
   margin: 0 5px;
-  background: #015958;
+  background: #45ad9d;
   color: #fff;
   border-radius: 5px;
 }
 
 button.project {
-  background-color: #008F8C;
+  background-color: #45ad9d;
   color: #fff;
   border: none;
   font-weight: 600;
@@ -365,10 +378,6 @@ button.project:hover {
   transform: scale(1.1);
 }
 
-button.project i:hover {
-  color: #ff8d5b;
-}
-
 /************** Skills Section *************/
 
 #skills .content-wrapper {
@@ -377,7 +386,7 @@ button.project i:hover {
 
 /* Entire skills section id */
 #skills {
-  background: #015958;
+  background: #45ad9d;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -415,8 +424,7 @@ button.project i:hover {
 /* Tech Skills Section*/
 .tech-skills {
   background: #fff;
-  border: 2px solid #e7ded9;
-  box-shadow: 5px 5px #e7ded9;
+  box-shadow: 5px 5px #ddd;
   padding-bottom: 15px;
   display: flex;
   justify-content: center;
@@ -428,8 +436,7 @@ button.project i:hover {
 /* Soft Skills Section */
 .soft-skills {
   background: #fff;
-  border: 2px solid #e7ded9;
-  box-shadow: 5px 5px #e7ded9;
+  box-shadow: 5px 5px #ddd;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -449,13 +456,13 @@ button.project i:hover {
 }
 
 #skills i {
-  color: #008F8C;
+  color: #2b2b2b;
   font-size: 1.75em;
   margin-bottom: 40px;
 }
 
 #skills i:hover {
-  color: #008F8C;
+  color: #45ad9d;
   transform: scale(1.1);
 }
 
@@ -511,7 +518,7 @@ footer {
   display: flex;
   justify-content: center;
   color: #fff;
-  background-color: #015958;
+  background-color: #45ad9d;
   padding: 20px 0;
 }
 
@@ -661,11 +668,10 @@ header .content-wrapper {
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
-  background-color: #015958;
+  background-color: #45ad9d;
   position: relative;
 }
 
-/* Hide the links inside the navigation menu except for logo/home) */
 .topnav #myLinks {
   display:inline-flex;
 }
@@ -696,7 +702,6 @@ header .content-wrapper {
 /* Hero Area */
 
 .hero-area {
-  
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -704,12 +709,10 @@ header .content-wrapper {
   padding-bottom: 20px;
 }
 
-.hero-area h1 {
-  color: #2b2b2b;
-  font-weight: 600;
+h1 {
+  color: #45ad9d;
   font-size: 3em;
-  width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 
@@ -722,11 +725,11 @@ header .content-wrapper {
 }
 
 img.bio-pic {
-  width: 50%;
+  width: 40%;
 }
 
 .description {
-  width: 30%;
+  width: 45%;
   color: #2b2b2b;
   font-size: 1.5em;
 }
@@ -836,6 +839,12 @@ button.project a {
 
 /* Header Section */
 
+
+header .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .name h2 {
   font-size: 1.75em;
   
@@ -853,15 +862,13 @@ button.project a {
     flex-flow: column wrap;
   }
 
-  .hero-content .headline {
-    width: 75%;
-    text-align: left;
-  }
+h1 {
+  font-size: 3.5em;
+}
 
-  .headline h1 {
-    width: 70%;
-    margin-bottom: 0;
-  }
+.hero-area h2 {
+  font-size: 2.5em;
+}
 
 .description-image {
  display: flex;
@@ -968,9 +975,6 @@ button.project {
 /* Skills Section */
 
 
-#skills {
-  background: #015958;
-}
 
 #skills p {
   font-size: 1.125em;
