@@ -482,7 +482,10 @@ button.project:hover {
 
 img.bio-pic {
   width: 60%;
-  
+}
+
+.bio-pic {
+  border-radius: 25%;
 }
 
 #about h2 {
